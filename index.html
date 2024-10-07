@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Свяжитесь с нами</title>
+  <link rel="stylesheet" href="index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Нашли ошибку?</h1>
+    <h2 class="subtitle">Свяжитесь с нами</h2>
+    <form action="" name="contact-form" class="form">
+      <label for="email">Email</label>
+      <input type="email" class="input" name="email" required placeholder="ivanov@mail.ru">
+      <p id="email-error" class="validation-message"></p>
+      <br>
+
+      <label for="phone">Номер телефона</label>
+      <input type="tel" class="input" name="phone" pattern="[\+][0-9]{9,12}" placeholder="+7 (987)-654-1212" required>
+      <p id="phone-error" class="validation-message"></p>
+      <br>
+
+      <label for="picture">Прикрепите фото ошибки</label>
+      <input type="file" class="input" name="picture" accept="image/jpeg,image/png" multiple>
+      <p id="picture-error" class="validation-message"></p>
+
+      <div class="navigation">
+        <button type="submit" id="submit-form-btn" class="btn">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
